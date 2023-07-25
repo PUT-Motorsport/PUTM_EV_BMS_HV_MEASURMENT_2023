@@ -1,0 +1,727 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Accumulator signal board-A C1-C14"
+Date "2021-06-27"
+Rev "1.0"
+Comp "PUT Motorsport"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3400 1150 0    50   ~ 0
+C1-, C1+, C2+, C3+, C4+, C5+, C6+, C7+, C8+, C9+, T1, T2, T3 - 16 PIN connector\nC9+=C10-, C11+, C12+, C13+, C14+, T4, T5 - 16 PIN connector board A\nC15+, C16+, C17+, C18+, T6 - 16 PIN coonector - connected from board B
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even S1
+U 1 1 60B00A26
+P 6650 2250
+F 0 "S1" H 6700 2767 50  0000 C CNN
+F 1 "T821116A1S100CEU" H 6700 2676 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 6650 2250 50  0001 C CNN
+F 3 "~" H 6650 2250 50  0001 C CNN
+	1    6650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 60B0554F
+P 1200 4050
+F 0 "J2" H 1118 3825 50  0000 C CNN
+F 1 "PAD" H 1118 3916 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 4050 50  0001 C CNN
+F 3 "~" H 1200 4050 50  0001 C CNN
+	1    1200 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 60B066FC
+P 1750 4050
+F 0 "F1" V 1525 4050 50  0000 C CNN
+F 1 "RF72-090F" V 1616 4050 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 3850 50  0001 L CNN
+F 3 "~" H 1750 4050 50  0001 C CNN
+	1    1750 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4050 1600 4050
+Wire Wire Line
+	1900 4050 2050 4050
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 60B077B1
+P 1200 3650
+F 0 "J1" H 1118 3425 50  0000 C CNN
+F 1 "PAD" H 1118 3516 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 3650 50  0001 C CNN
+F 3 "~" H 1200 3650 50  0001 C CNN
+	1    1200 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 3650 2050 3650
+Text Label 2050 3650 0    50   ~ 0
+C1-
+Text Label 2050 4050 0    50   ~ 0
+C1+
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 60B08599
+P 1200 4450
+F 0 "J3" H 1118 4225 50  0000 C CNN
+F 1 "PAD" H 1118 4316 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 4450 50  0001 C CNN
+F 3 "~" H 1200 4450 50  0001 C CNN
+	1    1200 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F2
+U 1 1 60B0859F
+P 1750 4450
+F 0 "F2" V 1525 4450 50  0000 C CNN
+F 1 "RF72-090F" V 1616 4450 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 4250 50  0001 L CNN
+F 3 "~" H 1750 4450 50  0001 C CNN
+	1    1750 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4450 1600 4450
+Wire Wire Line
+	1900 4450 2050 4450
+Text Label 2050 4450 0    50   ~ 0
+C2+
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 60B0A3B3
+P 1200 4850
+F 0 "J4" H 1118 4625 50  0000 C CNN
+F 1 "PAD" H 1118 4716 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 4850 50  0001 C CNN
+F 3 "~" H 1200 4850 50  0001 C CNN
+	1    1200 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F3
+U 1 1 60B0A3B9
+P 1750 4850
+F 0 "F3" V 1525 4850 50  0000 C CNN
+F 1 "RF72-090F" V 1616 4850 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 4650 50  0001 L CNN
+F 3 "~" H 1750 4850 50  0001 C CNN
+	1    1750 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4850 1600 4850
+Wire Wire Line
+	1900 4850 2050 4850
+Text Label 2050 4850 0    50   ~ 0
+C3+
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 60B0A3C2
+P 1200 5250
+F 0 "J5" H 1118 5025 50  0000 C CNN
+F 1 "PAD" H 1118 5116 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 5250 50  0001 C CNN
+F 3 "~" H 1200 5250 50  0001 C CNN
+	1    1200 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F4
+U 1 1 60B0A3C8
+P 1750 5250
+F 0 "F4" V 1525 5250 50  0000 C CNN
+F 1 "RF72-090F" V 1616 5250 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 5050 50  0001 L CNN
+F 3 "~" H 1750 5250 50  0001 C CNN
+	1    1750 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 5250 1600 5250
+Wire Wire Line
+	1900 5250 2050 5250
+Text Label 2050 5250 0    50   ~ 0
+C4+
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 60B0B0E1
+P 1200 5700
+F 0 "J6" H 1118 5475 50  0000 C CNN
+F 1 "PAD" H 1118 5566 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 5700 50  0001 C CNN
+F 3 "~" H 1200 5700 50  0001 C CNN
+	1    1200 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F5
+U 1 1 60B0B0E7
+P 1750 5700
+F 0 "F5" V 1525 5700 50  0000 C CNN
+F 1 "RF72-090F" V 1616 5700 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 5500 50  0001 L CNN
+F 3 "~" H 1750 5700 50  0001 C CNN
+	1    1750 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 5700 1600 5700
+Wire Wire Line
+	1900 5700 2050 5700
+Text Label 2050 5700 0    50   ~ 0
+C5+
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 60B0B0F0
+P 1200 6100
+F 0 "J7" H 1118 5875 50  0000 C CNN
+F 1 "PAD" H 1118 5966 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 6100 50  0001 C CNN
+F 3 "~" H 1200 6100 50  0001 C CNN
+	1    1200 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F6
+U 1 1 60B0B0F6
+P 1750 6100
+F 0 "F6" V 1525 6100 50  0000 C CNN
+F 1 "RF72-090F" V 1616 6100 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 5900 50  0001 L CNN
+F 3 "~" H 1750 6100 50  0001 C CNN
+	1    1750 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 6100 1600 6100
+Wire Wire Line
+	1900 6100 2050 6100
+Text Label 2050 6100 0    50   ~ 0
+C6+
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 60B0C9CC
+P 1200 6500
+F 0 "J8" H 1118 6275 50  0000 C CNN
+F 1 "PAD" H 1118 6366 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 6500 50  0001 C CNN
+F 3 "~" H 1200 6500 50  0001 C CNN
+	1    1200 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F7
+U 1 1 60B0C9D2
+P 1750 6500
+F 0 "F7" V 1525 6500 50  0000 C CNN
+F 1 "RF72-090F" V 1616 6500 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 6300 50  0001 L CNN
+F 3 "~" H 1750 6500 50  0001 C CNN
+	1    1750 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 6500 1600 6500
+Wire Wire Line
+	1900 6500 2050 6500
+Text Label 2050 6500 0    50   ~ 0
+C7+
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 60B0C9DB
+P 1200 6900
+F 0 "J9" H 1118 6675 50  0000 C CNN
+F 1 "PAD" H 1118 6766 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 1200 6900 50  0001 C CNN
+F 3 "~" H 1200 6900 50  0001 C CNN
+	1    1200 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F8
+U 1 1 60B0C9E1
+P 1750 6900
+F 0 "F8" V 1525 6900 50  0000 C CNN
+F 1 "RF72-090F" V 1616 6900 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 1800 6700 50  0001 L CNN
+F 3 "~" H 1750 6900 50  0001 C CNN
+	1    1750 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 6900 1600 6900
+Wire Wire Line
+	1900 6900 2050 6900
+Text Label 2050 6900 0    50   ~ 0
+C8+
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 60B11E7A
+P 3000 3650
+F 0 "J10" H 2918 3425 50  0000 C CNN
+F 1 "PAD" H 2918 3516 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 3650 50  0001 C CNN
+F 3 "~" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F9
+U 1 1 60B11E80
+P 3550 3650
+F 0 "F9" V 3325 3650 50  0000 C CNN
+F 1 "RF72-090F" V 3416 3650 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 3450 50  0001 L CNN
+F 3 "~" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 3650 3400 3650
+Wire Wire Line
+	3700 3650 3850 3650
+Text Label 3850 3650 0    50   ~ 0
+C9+
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 60B11E89
+P 3000 4050
+F 0 "J11" H 2918 3825 50  0000 C CNN
+F 1 "PAD" H 2918 3916 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 4050 50  0001 C CNN
+F 3 "~" H 3000 4050 50  0001 C CNN
+	1    3000 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F10
+U 1 1 60B11E8F
+P 3550 4050
+F 0 "F10" V 3325 4050 50  0000 C CNN
+F 1 "RF72-090F" V 3416 4050 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 3850 50  0001 L CNN
+F 3 "~" H 3550 4050 50  0001 C CNN
+	1    3550 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4050 3400 4050
+Wire Wire Line
+	3700 4050 3850 4050
+Text Label 3850 4050 0    50   ~ 0
+C10+
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 60B1278F
+P 3000 4450
+F 0 "J12" H 2918 4225 50  0000 C CNN
+F 1 "PAD" H 2918 4316 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 4450 50  0001 C CNN
+F 3 "~" H 3000 4450 50  0001 C CNN
+	1    3000 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F11
+U 1 1 60B12795
+P 3550 4450
+F 0 "F11" V 3325 4450 50  0000 C CNN
+F 1 "RF72-090F" V 3416 4450 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 4250 50  0001 L CNN
+F 3 "~" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4450 3400 4450
+Wire Wire Line
+	3700 4450 3850 4450
+Text Label 3850 4450 0    50   ~ 0
+C11+
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 60B1279E
+P 3000 4850
+F 0 "J13" H 2918 4625 50  0000 C CNN
+F 1 "PAD" H 2918 4716 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 4850 50  0001 C CNN
+F 3 "~" H 3000 4850 50  0001 C CNN
+	1    3000 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F12
+U 1 1 60B127A4
+P 3550 4850
+F 0 "F12" V 3325 4850 50  0000 C CNN
+F 1 "RF72-090F" V 3416 4850 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 4650 50  0001 L CNN
+F 3 "~" H 3550 4850 50  0001 C CNN
+	1    3550 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4850 3400 4850
+Wire Wire Line
+	3700 4850 3850 4850
+Text Label 3850 4850 0    50   ~ 0
+C12+
+Wire Wire Line
+	5900 3650 5600 3650
+Wire Wire Line
+	5900 4050 5600 4050
+Text Label 5600 4050 2    50   ~ 0
+T1-
+Text Label 5600 3650 2    50   ~ 0
+T1+
+Text Label 5600 5150 2    50   ~ 0
+T3-
+Text Label 5600 4750 2    50   ~ 0
+T3+
+Text Label 5600 5700 2    50   ~ 0
+T4-
+Text Label 5600 5300 2    50   ~ 0
+T4+
+Text Label 6250 1950 2    50   ~ 0
+C1-
+Wire Wire Line
+	6450 1950 6250 1950
+Text Label 7150 1950 0    50   ~ 0
+C1+
+Wire Wire Line
+	6950 1950 7150 1950
+Text Label 6250 2050 2    50   ~ 0
+C2+
+Wire Wire Line
+	6450 2050 6250 2050
+Text Label 7150 2050 0    50   ~ 0
+C3+
+Wire Wire Line
+	6950 2050 7150 2050
+Text Label 6250 2450 2    50   ~ 0
+C4+
+Wire Wire Line
+	6450 2450 6250 2450
+Text Label 7150 2450 0    50   ~ 0
+C5+
+Wire Wire Line
+	6950 2450 7150 2450
+Text Label 6250 2550 2    50   ~ 0
+C6+
+Wire Wire Line
+	6450 2550 6250 2550
+Text Label 7150 2550 0    50   ~ 0
+C7+
+Wire Wire Line
+	6950 2550 7150 2550
+Text Label 6250 2650 2    50   ~ 0
+C8+
+Wire Wire Line
+	6450 2650 6250 2650
+Text Label 7150 2650 0    50   ~ 0
+C9+
+Wire Wire Line
+	6950 2650 7150 2650
+Text Label 6250 2150 2    50   ~ 0
+T1-
+Wire Wire Line
+	6450 2150 6250 2150
+Text Label 7150 2150 0    50   ~ 0
+T1+
+Wire Wire Line
+	6950 2150 7150 2150
+Text Label 6250 2250 2    50   ~ 0
+T2-
+Wire Wire Line
+	6450 2250 6250 2250
+Text Label 6250 2350 2    50   ~ 0
+T3-
+Wire Wire Line
+	6450 2350 6250 2350
+Text Label 7150 2250 0    50   ~ 0
+T2+
+Wire Wire Line
+	6950 2250 7150 2250
+Text Label 7150 2350 0    50   ~ 0
+T3+
+Wire Wire Line
+	6950 2350 7150 2350
+Text Label 8200 1950 2    50   ~ 0
+C9+
+Wire Wire Line
+	8400 1950 8200 1950
+Text Label 9100 1950 0    50   ~ 0
+C10+
+Wire Wire Line
+	8900 1950 9100 1950
+Text Label 8200 2050 2    50   ~ 0
+C11+
+Wire Wire Line
+	8400 2050 8200 2050
+Text Label 9100 2050 0    50   ~ 0
+C12+
+Wire Wire Line
+	8900 2050 9100 2050
+Text Label 8200 2150 2    50   ~ 0
+T4-
+Text Label 9100 2150 0    50   ~ 0
+T4+
+Wire Wire Line
+	8200 2150 8400 2150
+Wire Wire Line
+	8900 2150 9100 2150
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even S2
+U 1 1 60D8B0B0
+P 8600 2250
+F 0 "S2" H 8650 2767 50  0000 C CNN
+F 1 "T821116A1S100CEU" H 8650 2676 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 8600 2250 50  0001 C CNN
+F 3 "~" H 8600 2250 50  0001 C CNN
+	1    8600 2250
+	1    0    0    -1  
+$EndComp
+Text Label 8200 2250 2    50   ~ 0
+T5-
+Wire Wire Line
+	8200 2250 8400 2250
+Text Label 8200 2350 2    50   ~ 0
+T6-
+Wire Wire Line
+	8200 2350 8400 2350
+Text Label 9100 2250 0    50   ~ 0
+T5+
+Wire Wire Line
+	8900 2250 9100 2250
+Text Label 9100 2350 0    50   ~ 0
+T6+
+Wire Wire Line
+	8900 2350 9100 2350
+Text Label 8200 2450 2    50   ~ 0
+C13+
+Wire Wire Line
+	8400 2450 8200 2450
+Text Label 8200 2550 2    50   ~ 0
+C15+
+Wire Wire Line
+	8400 2550 8200 2550
+Text Label 8200 2650 2    50   ~ 0
+C17+
+Wire Wire Line
+	8400 2650 8200 2650
+Text Label 9100 2450 0    50   ~ 0
+C14+
+Wire Wire Line
+	8900 2450 9100 2450
+Text Label 9100 2550 0    50   ~ 0
+C16+
+Wire Wire Line
+	8900 2550 9100 2550
+Text Label 9100 2650 0    50   ~ 0
+C18+
+Wire Wire Line
+	8900 2650 9100 2650
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 60DA89BB
+P 3000 5300
+F 0 "J14" H 2918 5075 50  0000 C CNN
+F 1 "PAD" H 2918 5166 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 5300 50  0001 C CNN
+F 3 "~" H 3000 5300 50  0001 C CNN
+	1    3000 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F13
+U 1 1 60DA89C1
+P 3550 5300
+F 0 "F13" V 3325 5300 50  0000 C CNN
+F 1 "RF72-090F" V 3416 5300 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 5100 50  0001 L CNN
+F 3 "~" H 3550 5300 50  0001 C CNN
+	1    3550 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 5300 3400 5300
+Wire Wire Line
+	3700 5300 3850 5300
+Text Label 3850 5300 0    50   ~ 0
+C13+
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 60DAAD9D
+P 3000 5700
+F 0 "J15" H 2918 5475 50  0000 C CNN
+F 1 "PAD" H 2918 5566 50  0000 C CNN
+F 2 "PUTM_EV_BMS_HV_Signal_2021:CELL_PAD" H 3000 5700 50  0001 C CNN
+F 3 "~" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Polyfuse F14
+U 1 1 60DAADA3
+P 3550 5700
+F 0 "F14" V 3325 5700 50  0000 C CNN
+F 1 "RF72-090F" V 3416 5700 50  0000 C CNN
+F 2 "Fuse:Fuse_Bourns_MF-RG400" H 3600 5500 50  0001 L CNN
+F 3 "~" H 3550 5700 50  0001 C CNN
+	1    3550 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 5700 3400 5700
+Wire Wire Line
+	3700 5700 3850 5700
+Text Label 3850 5700 0    50   ~ 0
+C14+
+Text Label 5600 6250 2    50   ~ 0
+T5-
+Text Label 5600 5850 2    50   ~ 0
+T5+
+Wire Wire Line
+	2750 2000 2700 2000
+Wire Wire Line
+	2750 2100 2700 2100
+Wire Wire Line
+	2750 2200 2700 2200
+Wire Wire Line
+	2750 2300 2700 2300
+Wire Wire Line
+	2750 2500 2700 2500
+Wire Wire Line
+	2750 2400 2700 2400
+Text Label 2700 2300 2    50   ~ 0
+C18+
+Text Label 2700 2200 2    50   ~ 0
+C17+
+Text Label 2700 2100 2    50   ~ 0
+C16+
+Text Label 2700 2000 2    50   ~ 0
+C15+
+Text Label 2700 2400 2    50   ~ 0
+T6+
+Text Label 2700 2500 2    50   ~ 0
+T6-
+$Comp
+L Connector_Generic:Conn_01x06 P1
+U 1 1 60DA6CE1
+P 2950 2200
+F 0 "P1" H 3030 2192 50  0000 L CNN
+F 1 "Board_B" H 3030 2101 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 2950 2200 50  0001 C CNN
+F 3 "~" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 2250 1850 0    50   ~ 0
+signals from board B, ribbon cable
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 60DCA3A4
+P 5900 3850
+F 0 "TH1" H 5748 3804 50  0000 R CNN
+F 1 "B57861S0103F040" H 5748 3895 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5900 3900 50  0001 C CNN
+F 3 "~" H 5900 3900 50  0001 C CNN
+	1    5900 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 4000 5900 4050
+Wire Wire Line
+	5900 3700 5900 3650
+Wire Wire Line
+	5900 4200 5600 4200
+Wire Wire Line
+	5900 4600 5600 4600
+$Comp
+L Device:Thermistor_NTC TH2
+U 1 1 60DD890B
+P 5900 4400
+F 0 "TH2" H 5747 4354 50  0000 R CNN
+F 1 "B57861S0103F040" H 5747 4445 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5900 4450 50  0001 C CNN
+F 3 "~" H 5900 4450 50  0001 C CNN
+	1    5900 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 4550 5900 4600
+Wire Wire Line
+	5900 4250 5900 4200
+Wire Wire Line
+	5900 4750 5600 4750
+Wire Wire Line
+	5900 5150 5600 5150
+$Comp
+L Device:Thermistor_NTC TH3
+U 1 1 60DDBEB3
+P 5900 4950
+F 0 "TH3" H 5747 4904 50  0000 R CNN
+F 1 "B57861S0103F040" H 5747 4995 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5900 5000 50  0001 C CNN
+F 3 "~" H 5900 5000 50  0001 C CNN
+	1    5900 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 5100 5900 5150
+Wire Wire Line
+	5900 4800 5900 4750
+Wire Wire Line
+	5900 5300 5600 5300
+Wire Wire Line
+	5900 5700 5600 5700
+$Comp
+L Device:Thermistor_NTC TH4
+U 1 1 60DDF645
+P 5900 5500
+F 0 "TH4" H 5747 5454 50  0000 R CNN
+F 1 "B57861S0103F040" H 5747 5545 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5900 5550 50  0001 C CNN
+F 3 "~" H 5900 5550 50  0001 C CNN
+	1    5900 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 5650 5900 5700
+Wire Wire Line
+	5900 5350 5900 5300
+Wire Wire Line
+	5900 5850 5600 5850
+Wire Wire Line
+	5900 6250 5600 6250
+$Comp
+L Device:Thermistor_NTC TH5
+U 1 1 60DE7F37
+P 5900 6050
+F 0 "TH5" H 5747 6004 50  0000 R CNN
+F 1 "B57861S0103F040" H 5747 6095 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5900 6100 50  0001 C CNN
+F 3 "~" H 5900 6100 50  0001 C CNN
+	1    5900 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 6200 5900 6250
+Wire Wire Line
+	5900 5900 5900 5850
+Text Label 5600 4200 2    50   ~ 0
+T2+
+Text Label 5600 4600 2    50   ~ 0
+T2-
+$EndSCHEMATC

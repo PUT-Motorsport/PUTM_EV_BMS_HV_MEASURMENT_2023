@@ -1,0 +1,6 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"F1, F10, F11, F12, F13, F14, F2, F3, F4, F5, F6, F7, F8, F9",Fuse_Bourns_MF-RG400,14,RF72-090F,
+"J1, J10, J11, J12, J13, J14, J15, J2, J3, J4, J5, J6, J7, J8, J9",CELL_PAD,15,PAD,
+P1,IDC-Header_2x03_P2.54mm_Vertical,1,Board_B,
+"S1, S2",IDC-Header_2x08_P2.54mm_Vertical,2,T821116A1S100CEU,
+"TH1, TH2, TH3, TH4, TH5",PinHeader_1x02_P1.27mm_Vertical,5,B57861S0103F040,
