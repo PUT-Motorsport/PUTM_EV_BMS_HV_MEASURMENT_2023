@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name PUTM_EV_BMS_HV_Signal_2021)(type KiCad)(uri ${KIPRJMOD}/PUTM_EV_BMS_HV_Signal_2021.pretty)(options "")(descr ""))
-)
